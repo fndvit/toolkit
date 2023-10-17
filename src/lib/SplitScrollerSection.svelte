@@ -20,9 +20,15 @@
 
 <style>
 	.scrollable-content {
-		@apply w-[50%] relative;
+		position: relative;
+		width: 50%;
 	}
 	.fixed-content {
-		@apply fixed top-0 right-0 w-[50%] flex h-screen;
+		display: flex;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 100vh;
 	}
 </style>
