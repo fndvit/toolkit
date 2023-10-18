@@ -37,13 +37,11 @@
 			bottom: sectionBottoms[i],
 			el: sectionEls[i] as HTMLElement
 		}));
-		console.log(sections.map(({ top, bottom }) => `${top}, ${bottom}`));
 		onScroll();
 	}
 
 	onMount(() => {
 		update();
-		// window.setInterval(update, 1000);
 	});
 </script>
 
