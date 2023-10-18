@@ -11,7 +11,7 @@
 	<div class="scrollable-content">
 		<slot name="scrollable" />
 	</div>
-	{#if $activeSectionEl === sectionEl}
+	{#if sectionEl && $activeSectionEl === sectionEl}
 		<div class="fixed-content">
 			<slot name="fixed" />
 		</div>
