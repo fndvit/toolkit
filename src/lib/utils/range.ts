@@ -1,6 +1,4 @@
-export function range(start: number, end: number) {
-	const length = Math.abs(end - start);
-	if (length === 0) return [];
-	const step = start < end ? 1 : -1;
+export function range(start: number, end: number, step = 1) {
+	const length = Math.floor((end - start) / step) + 1;
 	return Array.from({ length }, (_, i) => start + i * step);
 }
